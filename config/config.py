@@ -7,16 +7,16 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("18641113")
-API_HASH = getenv("bc5fea81e7bf9f3c0784a0a7d35f9c71")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
-BOT_TOKEN = getenv("5856214337:AAEOgHbJV1jYsH_61x_9woaScQVWXKjyiGY")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
-MONGO_DB_URI = getenv("mongodb+srv://King098:king098@cluster0.lhmvji8.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("-1001485686689"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Buddies music")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5323266323").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -25,13 +25,13 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheAnonymous2005/Ano
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Buddiesmusic")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Nanbananbii")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DevilsHeavenMF")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "200"))
-SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "200"))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "180"))
+SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -58,7 +58,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("AQB7O6kOylMPJ_OvLhjFLLkO7B2_Z-pSp1fa_5rj64Xj9NhCly4zIsNMgPMbp8wS7oe8snzSSV35X_TAbBkSN8y5jvVvmabe5gM23t0oMcG5xqWvF3dchu9MWtC1j613zufRWbaf2W9b3rO5GhQhBWrzyF5_IbeOC9zH2IfZpRD0DNqV2KhwWk_-1u6KUt5ZR9LH3h93WrY1iiiC-KtI-0wHCs38ZeMVDsqCzjycegTscGQzsOBCiFBhdchUjLfR0FQCsaQ-tsW1VCEtnCTSkbd2mUYh76j2IVBwbtyrJML0--MXQqejeCESJYVQX1-zQJHnEh56V-8-cisQpy4pU0l3AAAAAVpFd5cA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
