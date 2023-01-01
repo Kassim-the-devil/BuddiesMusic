@@ -10,7 +10,7 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🥺 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ 🥺",
+                text="☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ☆",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
@@ -25,9 +25,9 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="ᴍᴀɪɴᴛᴀɪɴᴇʀ", user_id=OWNER),
+                text="☆ ᴄʜᴀɴɴᴇʟ ☆", url=CONFIG.SUPPORT_CHANNEL 
             InlineKeyboardButton(
-                text="sᴜᴩᴩᴏʀᴛ", url=config.SUPPORT_GROUP
+                text="☆ sᴜᴩᴩᴏʀᴛ ☆", url=config.SUPPORT_GROUP
             ),
         ],
      ]
@@ -38,7 +38,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🥺 ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ 🥺",
+                text="☆ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ ☆",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             ),
         ],
@@ -50,12 +50,12 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɪɴᴇʀ", user_id=OWNER),
             InlineKeyboardButton(
-                text="sᴜᴩᴩᴏʀᴛ", url=config.SUPPORT_GROUP
+                text="☆ sᴜᴩᴩᴏʀᴛ ☆", url=config.SUPPORT_GROUP
             ),
         ],
         [
             InlineKeyboardButton(
-                    text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=config.UPSTREAM_REPO
+                    text="☆ ᴏᴡɴᴇʀ ☆", user_id=OWNER),
                 )
         ],
      ]
